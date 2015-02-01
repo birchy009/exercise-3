@@ -75,79 +75,112 @@ html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  text-size-adjust: 100%; }
+  text-size-adjust: 100%;
+  height: 100%;
+  background-color: #ccc; }
 
-/* line 16, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 18, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 *, *:before, *:after {
   box-sizing: inherit; }
 
-/* line 21, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 24, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0; }
-  /* line 26, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 29, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   body.noscript .close-btn, body.noscript .toggle-btn {
     display: none; }
 
-/* line 31, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 34, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 header {
   padding: 0 1em;
   position: relative; }
 
-/* line 36, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 39, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+header h1 {
+  text-align: center; }
+
+/* line 46, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 .toggle-btn {
   position: absolute;
   right: 1em;
   top: 0; }
 
-/* line 42, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
-.navigation ul {
-  margin: 0;
-  padding: 0; }
-  /* line 44, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
-  .navigation ul li {
-    list-style-type: none; }
-    /* line 46, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
-    .navigation ul li:first-child {
-      border-top: 1px solid #ccc; }
-    /* line 49, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
-    .navigation ul li a {
-      display: block;
-      padding: 0.5em 1em;
-      text-align: center;
-      border-bottom: 1px solid #ccc;
-      text-decoration: none; }
+/* line 53, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+.toggle-btn, .toggle-btn:visited {
+  color: #000; }
 
-/* line 60, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 58, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+.slide-menu a, .slide-menu a:visited {
+  color: #000; }
+
+/* line 63, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
+  z-index: 5;
   text-color: #222;
   height: 40px;
   width: 40px; }
-  /* line 64, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 68, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
-  /* line 67, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 71, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
     padding: 0.5em;
     border: 1px solid #222;
     border-radius: 10px; }
 
-/* line 74, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 78, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 .close-btn {
-  margin: 1em; }
+  margin-left: 1em; }
+
+/* line 82, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+.slide-menu li a:hover {
+  background-color: #222;
+  color: #ccc;
+  transition: all 200ms ease-in-out; }
+
+/* line 90, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+.navigation {
+  padding: 0 25%; }
+
+/* line 96, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+.navigation ul {
+  margin: 0;
+  padding: 0; }
+  /* line 98, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  .navigation ul li {
+    list-style-type: none; }
+    /* line 100, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+    .navigation ul li:first-child {
+      border-top: 1px solid #222; }
+    /* line 103, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+    .navigation ul li a {
+      display: block;
+      padding: 0.5em 1em;
+      text-align: center;
+      border-bottom: 1px solid #222;
+      text-decoration: none; }
+
+/* line 115, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+main {
+  padding: 0 25%; }
 
 @media only screen and (max-width: 60em) {
-  /* line 79, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 123, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  .navigation {
+    padding: 0; }
+
+  /* line 126, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 84, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+    /* line 131, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -155,34 +188,56 @@ header {
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0);
-      transition: all 300ms ease-in-out; }
-    /* line 91, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      transition: all 333ms ease-in-out; }
+    /* line 138, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
-      -webkit-transform: translateX(-100%);
-          -ms-transform: translateX(-100%);
-              transform: translateX(-100%); }
-    /* line 95, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      -webkit-transform: translateX(-30%);
+          -ms-transform: translateX(-30%);
+              transform: translateX(-30%); }
+      /* line 140, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      .site-wrapper[data-state="slide-open"] .sliding-canvas .toggle-btn {
+        display: none; }
+      /* line 143, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      .site-wrapper[data-state="slide-open"] .sliding-canvas main {
+        padding: 0 15% 0 35%;
+        transition: all 500ms ease-in-out; }
+      /* line 147, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      .site-wrapper[data-state="slide-open"] .sliding-canvas h1 {
+        text-align: left;
+        padding-left: 40%;
+        transition: all 300ms ease-in-out; }
+    /* line 154, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+    .site-wrapper[data-state="slide-closed"] main {
+      padding: 0 25%;
+      transition: all 500ms ease-in-out; }
+      /* line 157, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+      .site-wrapper[data-state="slide-closed"] main h1 {
+        text-align: center;
+        padding-left: 0;
+        transition: all 300ms ease-in-out; }
+    /* line 164, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 100, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 169, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
-    width: 100%;
+    width: 30%;
     height: 100%;
     top: 0;
     bottom: 0;
-    right: -100%;
-    min-height: 600px; }
+    right: -30%;
+    min-height: 750px;
+    border-left: 1px solid #222; }
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 113, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+  /* line 183, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
  }
 
-/* line 119, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
+/* line 188, /Users/birchy009/Desktop/GD-Y3S2/Web Dev 5/exercise-3/scss/components/main */
 body.noscript .slide-menu {
   position: static;
   right: auto; }
